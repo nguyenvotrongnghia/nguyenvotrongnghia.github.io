@@ -2,21 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Form</title>
-    <link rel="stylesheet" href="form.css">
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Đăng kí thành viên </h1>
     <form>
-        <label for="fname">User name:</label> <br>
-        <input type="text" id="taikhoan" > <br>
-        <label for="pass">Pass word:</label> <br>
-        <input type="password" id="taikhoan"><br>
-        <input type="checkbox">
-        <label for="button">Remember name ?</label> <br>
+        <div class="form-group">
+            <label>Full name:</label><br>
+            <input class=yellow type="text">
+        </div>
+        <div class="form-group">
+        <fieldset class="nho">
+            <legend> Giới tính </legend>
+            <label><input type="radio"> Nam </label>
+            <label><input type="radio"> Nữ </label>
+        </fieldset>
+        </div>
+        <div class="form-group">
+            <label>Ngày sinh:</label> <br>
+            <input class=yellow type="date">
+        </div>
+        <div class="form-group">
+            <label>Điểm:</label><br>
+            <input class=yellow type="number" min="0" max="10" step="0.25">
+        </div>
+        <div class="form-group">
+            <label>Nghề nghiệp:</label><br>
+            <input class=yellow list="job">
+            <datalist id="job">
+                <option value="Phục vụ">#1</option>
+                <option value="Quản lý">#2</option>
+                <option value="Lao công">#3</option>
+                <option value="Thợ đụng">#4</option>
+                <option value="IT">#5</option>
+            </datalist>
+        </div>
+        <div class="form-group">
+           <fieldset class="nho">
+               <legend>Sở thích:</legend>
+               <label><input type="checkbox">Thể thao</label>
+               <label><input type="checkbox">Du lịch</label>
+               <label><input type="checkbox">Âm nhạco</label>
+               <label><input type="checkbox">Ẩm thực</label>
+           </fieldset> 
+        </div>
+        <div class="form-group">
+            <label>Ghi chú:</label><br>
+            <textarea name="nhắc nhở" id="khung" cols="30" rows="10"></textarea>
+        </div>
         <hr>
-        <button type="submit"> Login </button> <br>
-        
+        <button>Đăng kí</button>
+        <button>Nhập lại</button>
     </form>
 </body>
 </html>

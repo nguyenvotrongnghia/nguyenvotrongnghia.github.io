@@ -1,0 +1,45 @@
+
+.form-group{
+    margin: 10px 0px;
+}
+.yellow{
+    width: 15%;
+    padding: 2px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+.form-group label{
+    font: bold;
+    font-variant: small-caps;
+}
+.yellow:focus{
+    background-color: yellow;
+    box-shadow: 0 0 3px red;
+    border: 1px solid yellow;
+}
+button{
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: orangered;
+    box-shadow: inset 0 0 20px blue;
+}
+button:hover{
+    color: blue;
+    box-shadow:inset 0 0 20px orangered;
+}
+#khung:focus{
+    background-color: yellow;
+    box-shadow: 0 0 3px red;
+    border: 1px solid yellow;
+}
+.nho{
+    width: 200px;
+}
+hr{
+    margin-right: 85%;
+}

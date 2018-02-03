@@ -1,45 +1,231 @@
 
-.form-group{
-    margin: 10px 0px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #131010;
+    line-height: 1.8em;
+    height: 100%;
+    font-weight: 400px;
 }
-.yellow{
-    width: 15%;
-    padding: 2px;
-    outline: none;
-    border: 1px solid grey;
-    border-radius: 3px;
+.one {
+    background-color: #3b5998;
+    overflow: hidden;
+    height: 63px;
 }
-.form-group label{
-    font: bold;
-    font-variant: small-caps;
+
+.one a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
-.yellow:focus{
-    background-color: yellow;
-    box-shadow: 0 0 3px red;
-    border: 1px solid yellow;
+
+.one ul {
+    margin: 8px 0 0 0;
+    list-style: none;
 }
-button{
-    padding: 5px 10px;
-    outline: none;
-    border: none;
-    border-radius: 20px;
-    font-weight: bold;
-    background-color: white;
-    color: orangered;
-    box-shadow: inset 0 0 20px blue;
+
+.one a:hover {
+    background-color: #ddd;
+    color: #000;
 }
-button:hover{
-    color: blue;
-    box-shadow:inset 0 0 20px orangered;
+.menucon {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
-#khung:focus{
-    background-color: yellow;
-    box-shadow: 0 0 3px red;
-    border: 1px solid yellow;
+
+.menucon a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color:rgba(219, 13, 13, 0.993);
+    display: block;
+    transition: 0.5s;
 }
-.nho{
-    width: 200px;
+
+.menucon a:hover {
+    color: rgb(179, 14, 255);
 }
-hr{
-    margin-right: 85%;
+
+.menucon .btn-close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+#main {
+    transition:  0.5s;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+    color: #e21313;
+    font-family:  'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-image: url(images/qwe.jpg);
+    background-size: cover;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#main h1 a {
+    text-decoration: none;
+    color: #462121;
+} 
+#section-a {
+    padding: 20px;
+    background: #0f0f0f;
+    text-align: center;
+    opacity: 0.9;
+}                   
+.section {
+    padding: 40px 70px;
+    color: white;
+}
+.section p a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #e7dcdc;
+    border: #dfd3d3 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.section p a:hover {
+    background: #fcfafa;
+    color: rgb(83, 72, 72);
+    transition: all 0.2s ease-in;
+}
+#banner .button {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ddd;
+    border: #ddd 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#banner .button:hover {
+    background: #ddd;
+    color: rgb(83, 72, 72);
+    transition: all 0.2s ease-in;
+}
+#banner {
+    background-image: url(images/thpt.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+    align-items: center;
+    opacity: 0.8;
+}
+
+#banner h1 {
+    font-size: 50px;
+    color: #fdf1f1;
+    
+    margin-bottom: 5px;
+}
+
+#banner p {
+    font-size: 20px;
+    color: #fdf1f1;
+    
+}
+
+.button{
+    font-size: 18px;
+    text-decoration: none;
+    color: #ddd;
+    border: #ddd 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.button:hover {
+    background: #ddd;
+    color: rgb(83, 72, 72);
+    transition: all 0.2s ease-in;
+}
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: #ddd;
+    color: rgb(253, 5, 5);
+    padding: 10px;  
+}
+
+.ptext .border.trongsuot {
+    background-color: transparent;
+}
+#section-b {
+    padding: 20px;
+    background: #282e34;
+    text-align: center;
+    color: #ddd;
+}
+
+
+
+
+.img1,
+.img2,
+.img3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img1 {
+    background-image: url(images/knowledge.jpg);
+    min-height: 300px;
+}
+
+.img2 {
+    background-image: url(images/sinhvien.jpg);
+    min-height: 300px;
+}
+
+.img3 {
+    background-image: url(images/img_nature_wide.jpg);
+    min-height: 300px;
+}
+
+footer{
+    color: white;
+    height: 50px;
+    text-align: center;
+    background-color: black;
 }

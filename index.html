@@ -2,57 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bài 2</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Trường Cao Đẳng</title>
+    <link rel="stylesheet" href="style.css" type="text/css" >
+    
 </head>
-<body>
-    <form>
-        <div class="form-group">
-            <label>Full name:</label><br>
-            <input class=yellow type="text">
+<body> 
+    <nav class="one">
+        <span class="open-silde" >
+            <a href="#" onclick="openSildeMenu()">
+                <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="brown" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="brown" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="brown" stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+        <ul class="one-li">
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#" >Hình Ảnh</a></li>
+            <li><a href="#">Liên Kết</a></li>
+        </ul>
+    </nav>
+    <div class="menucon">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Các Hoạt Động</a>
+        <a href="#">Chuyên Nghành</a>
+        <a href="#">Tin Tức</a>
+        <a href="#">Khen Thưởng</a>
+    </div>
+    <div id="main">
+        <h1><a href="#">Trường THPT Long Hòa</a>
+        </h1>
+    </div>
+    
+    <header id="banner">
+        <h1> Welcome to Long Hoa High School </h1>
+        <p>Thông Tin Về Ngôi Trường Cấp 3.</p>
+        <a href="..//dangnhap/index.html" target="_blank " class="button ">Đăng Ký Nhập Học</a>
+    </header>
+
+    <div class="img1">
+        <div class="ptext">
+            <span class="border trongsuot">
+            Nội dung
+        </span>
         </div>
-        <div class="form-group">
-        <fieldset class="nho">
-            <legend> Giới tính </legend>
-            <label><input type="radio"> Nam </label>
-            <label><input type="radio"> Nữ </label>
-        </fieldset>
-        </div>
-        <div class="form-group">
-            <label>Ngày sinh:</label> <br>
-            <input class=yellow type="date">
-        </div>
-        <div class="form-group">
-            <label>Điểm:</label><br>
-            <input class=yellow type="number" min="0" max="10" step="0.25">
-        </div>
-        <div class="form-group">
-            <label>Nghề nghiệp:</label><br>
-            <input class=yellow list="job">
-            <datalist id="job">
-                <option value="Phục vụ">#1</option>
-                <option value="Quản lý">#2</option>
-                <option value="Lao công">#3</option>
-                <option value="Thợ đụng">#4</option>
-                <option value="IT">#5</option>
-            </datalist>
-        </div>
-        <div class="form-group">
-           <fieldset class="nho">
-               <legend>Sở thích:</legend>
-               <label><input type="checkbox">Thể thao</label>
-               <label><input type="checkbox">Du lịch</label>
-               <label><input type="checkbox">Âm nhạco</label>
-               <label><input type="checkbox">Ẩm thực</label>
-           </fieldset> 
-        </div>
-        <div class="form-group">
-            <label>Ghi chú:</label><br>
-            <textarea name="nhắc nhở" id="khung" cols="30" rows="10"></textarea>
-        </div>
-        <hr>
-        <button>Đăng kí</button>
-        <button>Nhập lại</button>
-    </form>
+    </div>
+    <section id="section-a">
+        <div class="section">
+            <h2>Nội dung tuyển sinh</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odio hic, doloribus sit, delectus beatae eum, et porro saepe incidunt in aliquid. Deleniti adipisci perferendis debitis similique voluptas. Harum, a. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Tenetur odio hic, doloribus sit, delectus beatae eum, et porro saepe incidunt in aliquid. Deleniti adipisci perferendis debitis similique voluptas. Harum, a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            odio hic, doloribus sit, delectus beatae eum, et porro saepe incidunt in aliquid. Deleniti adipisci perferendis debitis similique voluptas. Harum, a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odio hic, doloribus sit,
+            delectus beatae eum, et porro saepe incidunt in aliquid. Deleniti adipisci perferendis debitis similique voluptas. Harum, a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta nisi nesciunt fugiat temporibus quia inventore repellat
+            at cumque, possimus eos voluptates assumenda, quasi corporis cum molestiae qui ipsum. Mollitia, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odio hic, doloribus sit, delectus beatae eum, et porro saepe incidunt
+            in aliquid. Deleniti adipisci perferendis debitis similique voluptas. Harum, a.
+        </p>
+        <a href="https://caodang.fpt.edu.vn/tuyen-sinh-cao-dang-xet-tuyen" class="button">Thông tin</a>
+    </div>
+</section>
+<div class="img2">
+    <div class="ptext">
+        <span class="border trongsuot">
+            Các Chuyên Nghành
+    </div>
+</div>
+<section id="section-b">
+    <div class="section">
+        <h2>Những điều bạn cần biết</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odio hic, doloribus sit, delectus beatae eum, et porro saepe incidunt in aliquid. Deleniti adipisci perferendis debitis similique voluptas. Harum, a. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Tenetur odio hic, doloribus sit, delectus beatae eum, et porro saepe incidunt in aliquid. Deleniti adipisci perferendis debitis similique voluptas. Harum, a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        odio hic, doloribus sit, delectus beatae eum, et porro saepe incidunt in aliquid. Deleniti adipisci perferendis debitis similique voluptas. Harum, a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odio hic, doloribus sit,
+        delectus beatae eum, et porro saepe incidunt in aliquid. Deleniti adipisci perferendis debitis similique voluptas. Harum, a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta nisi nesciunt fugiat temporibus quia inventore repellat
+        at cumque, possimus eos voluptates assumenda, quasi corporis cum molestiae qui ipsum. Mollitia, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odio hic, doloribus sit, delectus beatae eum, et porro saepe incidunt
+        in aliquid. Deleniti adipisci perferendis debitis similique voluptas. Harum, a.
+<p>
+<a href="# " class="button">Tìm Hiểu</a>
+</p>
+
+    </div>
+
+</section>
+<div class="img3">
+    <div class="ptext">
+        <span class="border trongsuot">
+        Chúng tôi là sự lựa chọn đúng đắn của bạn !!!
+    </span>
+    </div>
+</div>
+
+<footer>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</footer>
+
+
+
 </body>
-</html>
+</html> 
